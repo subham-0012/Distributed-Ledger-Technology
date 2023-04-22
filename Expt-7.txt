@@ -1,0 +1,32 @@
+Implementaion:
+1. Install the required binaries, images and dockers of Hyperledger. Visit the official documentaƟon
+
+for choosing your required version. hƩps://hyperledger-fabric.readthedocs.io/en/release-
+2.3/install.html#installing- the-latest-release
+
+2. Open your favorite IDE most preferably VScode. Try to clone the official GitHub repository of
+Hyperledger Fabric. Type the below command in the terminal. command – git clone
+hƩps://github.com/hyperledger/fabric-samples
+3. change the directory to test-network so as to get the access of switching the network on and off.
+Command – cd test-network
+4. Create a repository called chaincode, which is used for the deployment of chaincode contract
+which are primiƟve for Hyperledger. Command – mkdir chaincode
+5. Open the new network in the chaincode directory for a new connecƟon using the below
+command. Command - /.network.sh up
+This command creates a Fabric network that consists of two peer nodes, one ordering
+node. No channel is created when you run ./network.sh up
+6. To stop the network aŌer the connecƟon, use the following command: Command - /.network.sh
+down. This command tops the Fabric.
+
+
+Output:
+PS C:\Users\HP\Desktop\Distributed Ledger\fabric-samples> cd .\test-network\
+PS C:\Users\HP\Desktop\Distributed Ledger\fabric-samples\test-network> ./network.sh
+up
+PS C:\Users\HP\Desktop\Distributed Ledger\fabric-samples\test-network>
+[main 2023-03-16T04:00:57.747Z] update#setState idle
+
+[main 2023-03-16T04:01:00.392Z] [UtilityProcess id: 1, type: extensionHost, pid:
+<none>]: creating new...
+[main 2023-03-16T04:01:00.458Z] [UtilityProcess id: 1, type: extensionHost, pid:
+10616]: successfully created
