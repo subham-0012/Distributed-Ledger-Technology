@@ -183,10 +183,10 @@ return (
 contractB.getAstr(), contractC.getAValue());
 }
 }
+```
 
 
-
-
+```
 Single Level inheritance:
 pragma solidity >=0.4.22 <0.6.0;
 // Defining contract
@@ -226,11 +226,11 @@ cc.setValue();
 return cc.getValue();
 }
 }
+```
 
 
 
-
-
+```
 Multiple Inheritance:
 // Solidity program to
 // demonstrate
@@ -295,10 +295,10 @@ return (
 contractC.getStr(), contractC.getPow());
 }
 }
+```
 
 
-
-
+```
 Hierarchical Inheritance:
 // Solidity program to demonstrate
 // Hierarchical Inheritance
