@@ -10,6 +10,22 @@ perform transaction using metamask
 ## Expt 3:
 ```
 //SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.0;
+
+contract Voting {
+    mapping(address => bool) public hasVoted;
+    mapping(string => uint256) public voteCount;
+
+    function vote(string memory candidate) public {
+        require(!hasVoted[msg.sender], "Already voted");
+        
+        voteCount[candidate] += 1;
+        hasVoted[msg.sender] = true;
+    }
+}
+```
+```
+//SPDX-License-Identifier: UNLICENSED
 pragma solidity >=0.5.0 <0.9.0;
 contract CrowdFunding{
   mapping(address=>uint) public contributors;
@@ -184,10 +200,9 @@ contractB.getAstr(), contractC.getAValue());
 }
 }
 ```
-
-
 ```
 Single Level inheritance:
+
 pragma solidity >=0.4.22 <0.6.0;
 // Defining contract
 contract parent{
@@ -227,11 +242,9 @@ return cc.getValue();
 }
 }
 ```
-
-
-
 ```
 Multiple Inheritance:
+
 // Solidity program to
 // demonstrate
 // Multiple Inheritance
@@ -296,10 +309,9 @@ contractC.getStr(), contractC.getPow());
 }
 }
 ```
-
-
 ```
 Hierarchical Inheritance:
+
 // Solidity program to demonstrate
 // Hierarchical Inheritance
 pragma solidity >=0.4.22 <0.6.0;
