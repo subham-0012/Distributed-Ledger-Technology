@@ -106,14 +106,12 @@ return score;
 function setScore(uint new_score)public {
 score = new_score;
 }
-// creating a view function which returns sum of two numbers that are
-passed as parameter and the state variable number1
+// creating a view function which returns sum of two numbers that are passed as parameter and the state variable number1
 function getSumView(uint number2, uint number3) public view returns(uint)
 {
 uint sum = number1 + number2 + number3;
 return sum;}
-// creating a pure function which returns sum of two numbers that are
-passed as parameter
+// creating a pure function which returns sum of two numbers that are passed as parameter
 function getSumPure(uint number, uint number2) public pure returns(uint) {
 uint sum = number + number2;
 return sum;}
